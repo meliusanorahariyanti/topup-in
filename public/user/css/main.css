@@ -1,0 +1,51 @@
+.h-50 {
+    height: 225px !important;
+    object-fit: cover;
+}
+
+.radius-none {
+    border-radius: 0px !important;
+}
+
+.radius-6 {
+    border-radius: 6px !important;
+}
+
+.bg-main {
+    background-color: #3C1F42 !important;
+}
+
+.btn-purple {
+    background-color: #6242FC;
+    color: white;
+}
+
+.bg-purple {
+    background-color: #3C1F42;
+    color: white;
+}
+
+.card {
+    background-color: #3C1F42;
+    color: white;
+}
+
+.card-img {
+    height: 200px;
+    /* Atur tinggi gambar sesuai kebutuhan */
+    object-fit: cover;
+    /* Menjaga rasio gambar dan memotong jika perlu */
+}
+
+.carousel-item img {
+    width: 100%;
+    /* Mengatur lebar gambar untuk memenuhi lebar container */
+    height: 300px;
+    /* Atur tinggi gambar sesuai kebutuhan */
+    object-fit: cover;
+    /* Menjaga rasio gambar dan memotong jika perlu */
+}
+
+.hidden {
+    display: none;
+}
