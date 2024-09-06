@@ -13,110 +13,105 @@
   <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Tentang Proyek
+## Overview
 
-**Game Management Website** adalah aplikasi yang dirancang untuk mengelola dan menampilkan daftar game. Dengan aplikasi ini, Anda dapat menambahkan, mengedit, dan menghapus game, serta mengelola informasi seperti genre, jenis permainan, deskripsi, dan foto game.
+The **Game Management Website** is an application designed to manage and display a list of games. This platform allows users to add, edit, and delete games, as well as manage essential information such as genres, game types, descriptions, and images.
 
-## Teknologi dan Alat
+### Screenshots
 
-Website ini dibangun menggunakan teknologi dan alat berikut:
+<p align="center">
+  <img src="assets/screenshots/screenshot1.png" alt="Homepage Screenshot" width="600">
+  <img src="assets/screenshots/screenshot2.png" alt="Game Details Screenshot" width="600">
+</p>
 
-### **Backend**
+## Technologies Used
 
-- **Laravel**: Framework PHP yang mempermudah pengembangan aplikasi dengan sintaksis yang ekspresif dan elegan.
-- **PHP**: Bahasa pemrograman server-side untuk logika aplikasi dan interaksi database.
-- **MySQL**: Sistem manajemen basis data relasional untuk menyimpan data aplikasi.
+This website is built using the following technologies and tools:
 
-### **Frontend**
+- **Laravel**: A PHP framework that facilitates development with its expressive and elegant syntax.
+- **PHP**: A server-side scripting language used for application logic and database interactions.
+- **MySQL**: A relational database management system for storing application data.
+- **HTML/CSS**: Basic technologies for web page structure and styling.
+- **Bootstrap**: A CSS framework for responsive design and pre-built components.
+- **JavaScript**: A client-side scripting language that enhances user interactivity on web pages.
 
-- **HTML/CSS**: Teknologi dasar untuk struktur dan styling halaman web.
-- **Bootstrap**: Framework CSS untuk styling dan komponen yang responsif.
-- **JavaScript**: Bahasa pemrograman client-side untuk menambah interaktivitas pada halaman web.
+## Installation
 
-### **Tools dan Dependency**
+To set up the application locally, follow these steps:
 
-- **Composer**: Alat manajemen dependensi PHP untuk mengelola paket Laravel dan library lainnya.
-- **npm**: Node.js package manager untuk library front-end dan build tools.
-- **Git**: Sistem kontrol versi untuk melacak perubahan kode.
-- **Docker** (Opsional): Containerization untuk konsistensi lingkungan pengembangan dan produksi.
-
-## Instalasi
-
-Ikuti langkah-langkah berikut untuk menjalankan aplikasi di lingkungan lokal Anda:
-
-1. **Clone repository**:
+1. **Clone the repository**:
 
     ```bash
     git clone https://github.com/username/repository.git
     ```
 
-2. **Masuk ke direktori proyek**:
+2. **Navigate to the project directory**:
 
     ```bash
     cd repository
     ```
 
-3. **Instal dependensi**:
+3. **Install dependencies**:
 
     ```bash
     composer install
     ```
 
-4. **Salin file `.env.example` ke `.env`**:
+4. **Copy the `.env.example` file to `.env`**:
 
     ```bash
     cp .env.example .env
     ```
 
-5. **Generate kunci aplikasi**:
+5. **Generate an application key**:
 
     ```bash
     php artisan key:generate
     ```
 
-6. **Jalankan migrasi database**:
+6. **Run database migrations**:
 
     ```bash
     php artisan migrate
     ```
 
-7. **Jalankan server lokal**:
+7. **Start the local development server**:
 
     ```bash
     php artisan serve
     ```
 
-8. **Akses aplikasi**:
-   
-    Buka browser dan akses [http://localhost:8000](http://localhost:8000) untuk melihat aplikasi.
+8. **Access the application**:
 
-## Struktur Proyek
+    Open your browser and navigate to [http://localhost:8000](http://localhost:8000) to view the application.
 
-- **`app/Http/Controllers`**: Berisi controller untuk menangani logika aplikasi.
-- **`resources/views`**: Berisi file Blade template untuk tampilan aplikasi.
-- **`public`**: Folder untuk file yang dapat diakses publik, termasuk gambar dan CSS.
-- **`routes/web.php`**: Berisi rute aplikasi untuk menghubungkan URL dengan controller.
+## Project Structure
 
-## Kontribusi
+- **`app/Http/Controllers`**: Contains controllers responsible for application logic.
+- **`resources/views`**: Contains Blade templates for the application's views.
+- **`public`**: Folder for publicly accessible files, including images and CSS.
+- **`routes/web.php`**: Contains routes that link URLs to controllers.
 
-Kami menghargai kontribusi Anda! Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti panduan kontribusi di [dokumentasi Laravel](https://laravel.com/docs/contributions).
+## Contributing
 
-## Kode Etik
+We appreciate your interest in contributing to this project! Please refer to the [contribution guidelines](https://laravel.com/docs/contributions) in the Laravel documentation for more information.
 
-Untuk memastikan komunitas Laravel tetap menyambut semua orang, harap tinjau dan patuhi [Kode Etik](https://laravel.com/docs/contributions#code-of-conduct).
+## Code of Conduct
 
-## Kerentanan Keamanan
+To ensure a welcoming community, please review and adhere to the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-Jika Anda menemukan kerentanan keamanan dalam Laravel, silakan kirim email ke Taylor Otwell di [taylor@laravel.com](mailto:taylor@laravel.com). Semua kerentanan keamanan akan segera ditangani.
+## Security Vulnerabilities
 
-## Lisensi
+If you discover any security vulnerabilities, please contact Taylor Otwell at [taylor@laravel.com](mailto:taylor@laravel.com). All security issues will be addressed promptly.
 
-Framework Laravel adalah perangkat lunak open-source yang dilisensikan di bawah [MIT License](https://opensource.org/licenses/MIT).
+## License
 
-## Kontak
+The Laravel framework is open-source software licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-Jika Anda memiliki pertanyaan atau umpan balik, silakan hubungi kami di [email@example.com](mailto:email@example.com).
+## Contact
+
+For any questions or feedback, please reach out to [email@example.com](mailto:email@example.com).
 
 ---
 
-Terima kasih telah menggunakan **Game Management Website**! Kami berharap aplikasi ini bermanfaat bagi Anda.
+Thank you for using the **Game Management Website**! We hope you find this application useful.
