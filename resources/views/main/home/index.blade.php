@@ -41,26 +41,43 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-        // Menyimpan referensi ke tombol "Tampilkan Semua" dan semua item game
         const showAllButton = document.getElementById('show-all');
         const gameItems = document.querySelectorAll('#game-list .game-item');
+        let showingAll = false;
 
-        // Awalnya menyembunyikan semua item kecuali 6 item pertama
-        gameItems.forEach((item, index) => {
-            if (index >= 6) {
-                item.classList.add('hidden');
-            }
-        });
-
-        // Menambahkan event listener untuk menangani klik pada tombol "Tampilkan Semua"
-        showAllButton.addEventListener('click', (e) => {
-            e.preventDefault(); // Mencegah perilaku default dari link
-            gameItems.forEach((item) => {
-                item.classList.remove(
-                'hidden'); // Menampilkan semua item dengan menghapus kelas 'hidden'
+        // Awalnya sembunyikan semua item kecuali 6 yang pertama
+        function showInitialItems() {
+            gameItems.forEach((item, index) => {
+                if (index < 6) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
             });
-            showAllButton.style.display =
-            'none'; // Opsional: Menghilangkan tombol setelah semua item ditampilkan
+            showAllButton.textContent = 'Tampilkan Semua';
+            showingAll = false;
+        }
+
+        // Tampilkan semua item
+        function showAllItems() {
+            gameItems.forEach((item) => {
+                item.classList.remove('hidden');
+            });
+            showAllButton.textContent = 'Tampilkan Sebagian';
+            showingAll = true;
+        }
+
+        // Tentukan tampilan awal
+        showInitialItems();
+
+        // Tambahkan event listener untuk tombol
+        showAllButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (showingAll) {
+                showInitialItems();
+            } else {
+                showAllItems();
+            }
         });
     });
 
